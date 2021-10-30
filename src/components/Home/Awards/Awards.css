@@ -1,0 +1,99 @@
+.awards-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+[type=radio]{
+    display: none;
+}
+.card2 , .card1, .card3 {
+    border: none !important;
+    background-color: transparent !important;
+}
+#slider{
+    margin-top: 3rem;
+    width: 78%;
+    height: 25vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    background-color: transparent;
+}
+
+#slider label{
+    position: absolute;
+    margin: auto;
+    width: 33%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    border: 1px solid grey;
+    background: rgba(255,255,255,0.2);
+    border-radius: 2%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.awards-row #slider label p{
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+.card2{
+    border: 1px solid white;
+}
+
+/* .card1{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.card2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 31, 31);
+}
+
+.card3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(26, 209, 87);
+} */
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3, 
+#s3:checked ~ #slide1{
+    transform: translate3d(-108%, 0, -200px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2, 
+#s3:checked ~ #slide3{
+    transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide1, 
+#s3:checked ~ #slide2{
+    transform: translate3d(108%,0,-200px);
+}
+
+@media screen and (max-width: 600px) {
+
+    #slider{
+        width: 70%;
+        height: 42vw;
+    }
+
+    #slider label{
+        padding: 1.5rem;
+    }
+
+    .card2{
+        border: 1px solid grey;
+    }
+}

@@ -1,0 +1,181 @@
+.row2 {
+    margin: auto;
+    padding: auto;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.row2 p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+
+
+.row2-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 20rem;
+  margin-top: 2rem;
+  background-image: radial-gradient(
+    circle,
+    rgba(80, 80, 236, 0.5) 5%,
+    rgba(255, 255, 255, 0),
+    rgb(80, 80, 236, 0),
+    rgb(80, 80, 236, 0)
+  );
+}
+
+.row2-img .nepo-stroke {
+  width: 100%;
+  height: 2px;
+
+  border: none;
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+.row2-img .disc-stroke {
+  width: 100%;
+  height: 2px;
+
+  border: none;
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+.row2-img .stress-stroke {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  border: none;
+   right: 10%;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.row2-img .nepo-stroke {
+  
+  top: 13%;
+  left: 8%;
+}
+
+.row2-img .disc-stroke {
+ 
+  bottom: 24%;
+  left: 13%;
+}
+
+
+
+.row2-img .img1 {
+    position: relative;
+  background: transparent;
+  width: 50%;
+  height: 50vh;
+  min-height: 15rem;
+}
+.nepodescription {
+    position: absolute;
+    top: 8%;
+    left: 36%;
+    background: transparent;
+}
+
+.row2-img .img1 .nepoimg {
+   position: absolute;
+    background-image: url("../../../images/nepotism.svg");
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100%;
+    width: 41.5%;
+    min-width: 11rem;
+    top: 0%;
+    right: -1%;
+}
+
+.row2-img .img2 {
+    position: relative;
+    background: transparent;
+    width: 50%;
+    height: 50vh;
+    min-height: 20rem;
+  
+}
+
+.stressdescriptiion {
+    position: absolute;
+    top: 22.5%;
+    left: 28%;
+    background: transparent;
+}
+
+.row2-img .img2 .stressimg {
+    position: absolute;
+    background-image: url("../../../images/stress.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 25%;
+    min-width: 10rem;
+    background-color: transparent;
+    top: 26%;
+}
+
+.row2-img .img3 {
+    position: relative;
+    background: transparent;
+    width: 50%;
+    height: 50vh;
+    min-height: 20rem;
+}
+
+.discdescriptiion {
+    position: fixed;
+    position: absolute;
+    top: 9.5%;
+    left: -8%;
+    background: transparent;
+}
+
+
+.row2-img .img3 .discrimg {
+    position: absolute;
+    background-image: url("../../../images/discrimination.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70%;
+    min-width: 11.5rem;
+    width: 30%;
+    background-color: transparent;
+    top: -25.5%;
+    /* margin-top: -7rem; */
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+.row2-img .nepo-p,
+.row2-img .disc-p,
+.row2-img .stress-p {
+  letter-spacing: 0.5rem;
+  background: transparent;
+}
+
+@media (max-width: 1190px) {
+  .row2-img .img1 .nepoimg {
+   top: 5%;
+  }
+  .row2-img .img2 .stressimg{
+    background-size: contain;
+    /* bottom: 4%;
+    left: -4%; */
+  }
+  .row2-img .img3 .discrimg{
+    background-size: contain;
+    top: -35.5%;
+  }
+}

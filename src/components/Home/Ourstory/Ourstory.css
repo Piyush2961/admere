@@ -1,0 +1,27 @@
+.ourStory-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.storyheadline p{
+    font-size: 1.2rem;
+    
+}
+
+.ourStory-img{
+    margin-top: 2rem;
+}
+
+.ourStory-para p{
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-left: 4%;
+    margin-right: 4%;
+}

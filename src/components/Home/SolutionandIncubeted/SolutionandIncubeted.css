@@ -1,0 +1,345 @@
+
+  
+  .row3{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0rem;
+      /* background-color: yellow; */
+  }
+  
+  
+  .row3-img{
+      margin-top: 2rem;
+      position: relative;
+      width: 100%;
+      height: 40vw;
+  }
+  
+  
+  .row3-img .our-sol{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 37%;
+      height: 13rem;
+      background: rgba(255, 255, 255, 0.1);
+      bottom: 40%;
+      left: 5%;
+      padding: 0 1rem;
+      border: 1px solid grey;
+      min-height: 10rem;
+  }
+  
+  .row3-img .our-sol h1{
+      /* font-weight: normal; */
+     background-color: transparent;
+     margin-left: 0rem;
+  }
+  .row3-img .our-sol p {
+      margin-left: 0rem;
+      background-color: transparent;
+  }
+
+
+  .row3-img .big-circle{
+      position: absolute;
+      width: 32%;
+      height: 80%;
+      background-image: url('../../../images/community.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: 5%;
+      top: 14%;
+      border-radius: 50%;
+      box-shadow: 0 0 200px rgb(80, 80, 236);
+      
+  }
+  
+  .row3-img .pink-semiCircle{
+      position: absolute;
+      width: 8%;
+      height: 30%;
+      bottom: 18%;
+      right: 53%;
+      
+      border-radius: 150px 0 0 150px;
+      background: rgb(238, 54, 238);
+      
+  }
+  .row3-img .medium-circle {
+      width: 135%;
+      height: 85%;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 1.2rem;
+      margin-left: 1.2rem;
+      /* min-width: 5rem;
+      min-height: 5rem; */
+      background-image: url('../../../images/realTalent.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  
+  }
+  
+  .row3-img .violet-semiCircle{
+      position: absolute;
+      width: 8%;
+      height: 30%;
+      top: 0;
+      right: 40%;
+      border-radius: 0 150px 150px 0;
+      background: rgb(153, 30, 235);
+  }
+  
+  .row3-img .small-circle{
+  
+      width: 135%;
+      height: 85%;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 1.5rem;
+      margin-left: -3.5rem;
+      background-image: url('../../../images/techSupport.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+
+
+
+
+  
+  .row3-img .label{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0rem 2rem;
+      height: 8%;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 50px;
+  }
+  
+  .row3-img .label h6{
+      margin: 0;
+  }
+  
+  .row3-img .community-label{
+      position: absolute;
+      bottom: 0%;
+      left: 74%;
+      background:rgb(243 137 0);
+  }
+  
+  .row3-img .talent-label{
+      position: absolute;
+      bottom: 11%;
+      left: 45%;
+  }
+  
+  .row3-img .tech-label{
+      position: absolute;
+      top: 27%;
+      left: 48%;
+  }
+  
+  .incubation .row3 .community-label{
+      width: 25%;
+  }
+  
+  
+  
+  
+  /* medium */
+  /* @media screen and (min-width: 767px) and (max-width: 991px){
+      
+      
+  
+  } */
+  
+  /* small */
+
+  
+  /* extra small */
+   
+
+ @media (max-width: 1190px) {
+    .small-circle {
+        margin-top: 1rem !important;
+        margin-left: -3rem !important;
+    } 
+    .medium-circle {
+        margin-top: .8rem !important;
+    } 
+ }  
+
+ 
+ @media (max-width: 830px) {
+    .small-circle {
+        margin-top: .5rem !important;
+        margin-left: -2rem !important;
+    } 
+    .medium-circle {
+        margin-top: .5rem !important;
+        margin-left: .3rem !important;
+    } 
+      
+    .row3-img .our-sol{
+        height: 45%;
+    }
+
+    .row3-img .our-sol h1{
+        margin: 0.5rem 0;
+        font-size: 1.8rem;
+    }
+
+    .row3-img .our-sol p{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .big-circle {
+        width: 40% !important;
+        height: 100% !important;
+        margin-top: -1rem;
+    }
+    .small-circle {
+        width: 110% !important;
+        height: 80% !important;
+        margin-left: -1rem !important;
+        /* margin-top: .8rem !important; */
+    } 
+   
+    .tech-label {
+        width: 3.8rem !important
+    }
+   
+    .community-label {
+        width: 8.5rem !important
+    }
+    .community-label h6 , .tech-label h6 , .talent-label h6{
+        font-size: .6rem !important;
+    }
+    .medium-circle {
+        width: 110% !important;
+        height: 80% !important;
+    } 
+  
+    .row3-img .our-sol{
+        height: 60%;
+    }    
+
+    .row3-img .label h6{
+        font-size: 1.1rem;
+    }
+
+    .row3-img .label{
+        height: 14%;
+    }
+
+    .row3-img .community-label{
+        padding: 0;
+        width: 42%;
+        left: 65%;
+        bottom: 14%;
+    }
+
+    .incubation .row3 .community-label{
+        width: 42%;
+    }
+
+    .row3-img .big-circle{
+        width: 45%;
+        right: 0%;
+        top: -10%
+    }
+
+    .row3-img .pink-semiCircle{
+        width: 12%;
+        height: 40%;
+        bottom: 12%;
+        right: 48%;
+    }
+    
+    .row3-img .medium-circle{  
+        width: 16%;
+        bottom: 12%;
+        right: 46%;
+    }
+
+    .row3-img .talent-label{
+        bottom: 0;
+        left: 41%;
+    }
+
+    .row3-img .violet-semiCircle{
+        width: 12%;
+        height: 40%;
+        top: -58px;
+        right: 45%;
+    }
+
+    .row3-img .small-circle{
+        width: 16%;
+        top: -30%;
+        right: 55%;
+    }
+
+    .row3-img .tech-label{
+        top: 0%;
+        left: 40%;
+    
+    }
+
+    .incubation > .row3 .our-sol{
+        width: 42%;
+    }
+
+}
+
+  @media (min-width: 1300px) {
+    .community-label h6 , .tech-label h6 , .talent-label h6{
+        font-size: 1.5rem;
+    }
+    .our-sol {
+        height: 15rem !important;
+    }
+    .our-sol h1 {
+        font-size: 3rem;
+    }
+    .our-sol p {
+        font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .small-circle {
+        margin-left: -4.5rem !important;
+    }   
+   
+    .medium-circle {
+        margin-top: 1.8rem !important;
+    }
+    .community-label h6 , .tech-label h6 , .talent-label h6{
+        font-size: 2rem;
+    }
+    .our-sol {
+        height: 20rem !important;
+    }
+    .our-sol h1 {
+        font-size: 4rem;
+    }
+    .our-sol p {
+        font-size: 2rem;
+    }
+
+  }
+  

@@ -1,0 +1,78 @@
+.featuredArtists-row{
+    text-align: center;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#f-slider{
+    margin-top: 3rem;
+    width: 78%;
+    height: 25vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    background-color: transparent;
+}
+.f-card1, .f-card2, .f-card3 {
+    background-color: transparent;
+    border: none !important;
+}
+#f-slider label{
+    position: absolute;
+    margin: auto;
+    width: 33%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    border: 1px solid grey;
+    background: rgba(255,255,255,0.2);
+    border-radius: 2%;
+    padding: 2rem;
+    text-align: center;
+}
+
+#f-slider h6{
+    margin-top: 1.5rem;
+    background-color: transparent;
+}
+#f-slider p{
+    background-color: transparent;
+}
+.f-card2{
+    border: 1px solid white;
+}
+
+#f-s1:checked ~ #f-slide2, #f-s2:checked ~ #f-slide3, 
+#f-s3:checked ~ #f-slide1{
+    transform: translate3d(-108%, 0, -200px);
+}
+
+#f-s1:checked ~ #f-slide1, #f-s2:checked ~ #f-slide2, 
+#f-s3:checked ~ #f-slide3{
+    transform: translate3d(0,0,0);
+}
+
+#f-s1:checked ~ #f-slide3, #f-s2:checked ~ #f-slide1, 
+#f-s3:checked ~ #f-slide2{
+    transform: translate3d(108%,0,-200px);
+}
+
+@media screen and (max-width: 600px) {
+
+    #f-slider{
+        width: 70%;
+        height: 45vw;
+    }
+    .f-card2{
+        border: 1px solid grey;
+    }
+
+    #f-slider label{
+        padding: 1.5rem;
+    }
+}

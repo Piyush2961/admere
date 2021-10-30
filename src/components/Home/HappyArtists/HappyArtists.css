@@ -1,0 +1,92 @@
+.happy-artists-row{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.happy-artists-row .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.sub-box{
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-icon{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    background-color: transparent;
+   
+}
+.play-icon-button {
+    background-color: transparent;
+    font-size: 6rem !important;
+}
+.box1 .sub-box {
+    width: 70%;
+}
+.box1 {
+    margin-right: -5rem;
+    background-color: transparent;
+}
+.box2 {
+    margin-left: 0rem;
+    background-color: transparent;
+}
+.box2 .sub-box{
+    height: 100%;
+    width: 85%;
+}
+
+.box2 .sub-box img{
+    border: 3px solid white;
+}
+
+/* .box3{
+    margin-top: 2rem;
+}
+
+.box3 p{
+    margin-bottom: 0.5rem !important;
+}
+
+.box3 span{
+    margin-left: 1rem;
+} */
+
+@media (max-width: 650px) {
+    .happy-artists-row .row{
+        flex-direction: column;
+    }
+    .play-icon-button {
+        
+        font-size: 4rem !important;
+    }
+    .box2 .sub-box{
+        height: 100%;
+        width: 85%;
+        margin-left: none;
+    }
+    .bigimage {
+        width: 100%;
+        height: 100%;
+    }
+    .box1 {
+       width: 100%;
+       margin: auto !important;
+       
+    }
+    .box2 {
+        width: 100%;
+    }
+    .box2 .sub-box {
+        width: 70%;
+    }
+}
